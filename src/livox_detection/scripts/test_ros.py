@@ -20,6 +20,7 @@ from livoxdetection.models.ld_base_v1 import LD_base
 
 import copy
 import rospy
+import rospkg
 import ros_numpy
 import std_msgs.msg
 from geometry_msgs.msg import Point
@@ -94,7 +95,9 @@ def parse_config():
 
     parser.add_argument('--pt', type=str, default=None, help='checkpoint to start from')
 
-    args = parser.parse_args()
+    #args = parser.parse_args()  # roslaunch error
+
+    args, unknown = parser.parse_known_args()
     return args
 
 class ros_demo():
@@ -178,11 +181,22 @@ if __name__ == '__main__':
     args = parse_config()
     model = LD_base()
 
+    # get an instance of RosPack with the default search paths
+    rospack = rospkg.RosPack()
+
+    # list all packages, equivalent to rospack list
+    #rospack.list() 
+
+    # get the file path for rospy_tutorials
+    pkgpath = rospack.get_path('livox_detection')
+
+    '''
     if args.pt is None:
-        args.pt = "../pt/livox_model_1.pt"
+        args.pt = pkgpath + "/data/livox_model_1.pt"
     else:
         pass
-
+    '''
+    
     checkpoint = torch.load(args.pt, map_location=torch.device('cpu'))  
     model.load_state_dict({k.replace('module.', ''):v for k, v in checkpoint['model_state_dict'].items()})
     model.cuda()

@@ -1,18 +1,18 @@
 <launch>
 
 	<arg name="pt" default="$(find livox_detection)/data/livox_model_1.pt"/>
-  <arg name="rviz_enable" default="false"/>
+  <arg name="rviz_enable" default="true"/>
 
 
 
   <group ns="detection_demo">
-    <node pkg="livox_detection" name="demo" type="test_ros.py" args="--pt $(arg pt)"
+    <node pkg="livox_detection" name="demo" type="test_ros.py" args="--pt $(arg pt)" output="screen"
     />
   </group>
 
 	<group if="$(arg rviz_enable)">
 		<node name="rviz" pkg="rviz" type="rviz" respawn="true"
-				args="-d $(find livox_ros_driver)/data/rviz.rviz"/>
+				args="-d $(find livox_detection)/data/rviz.rviz"/>
     </group>
 
 </launch>
