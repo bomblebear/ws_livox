@@ -13,6 +13,7 @@
 using namespace cv;
 using namespace std;
 
+//string camera_in_path, camera_folder_path, result_path;
 string camera_in_path, camera_folder_path, result_path;
 int row_number, col_number, width, height;
 

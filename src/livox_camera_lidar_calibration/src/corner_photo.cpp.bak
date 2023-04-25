@@ -8,31 +8,16 @@
 #include <fstream>
 #include <opencv2/opencv.hpp>
 #include <string>
+
 #include "common.h"
 
 using namespace std;
-using namespace cv;
+
+void writeData(const string filename, const float x, const float y, uint mode);
 
 cv::Mat gray_img, src_img;
 cv::RNG  random_number_generator;
 string photo_path, output_name, intrinsic_path;
-
-
-void mouse_callback(int event, int x, int y, int flags, void* param) {
-
-    if (event == cv::EVENT_LBUTTONDOWN) {
-      //cout << "X: " <<x <<"Y: " <<y << endl;
-        char buff[64];
-        //sprintf_s(buff, "(%d,%d)", x, y);
-        snprintf(buff, sizeof(buff),"(%d,%d)", x, y);
-        cv::circle(src_img, cv::Point(x, y), 2,cv::Scalar(0, 0, 255),2);
-        cv::putText(src_img, buff, cv::Point(x, y), cv::FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0, 0, 255), 1);
-        cv::imshow("source", src_img);
-        cv::waitKey(1);
-    }
-}
-
-//void writeData(const string filename, const float x, const float y, uint mode);
 
 void writeData(const string filename, const float x, const float y, uint mode) {
     ofstream outfile(filename.c_str(), ios_base::app);
@@ -117,15 +102,10 @@ int main(int argc, char **argv) {
     cout << "Please note the four corners, and then tap a random key to give the coordinate" << endl;
     // cv::namedWindow("source", CV_WINDOW_KEEPRATIO);
     cv::namedWindow("source");
-    cv::setMouseCallback("source",mouse_callback);
-    while(1) {
-
-      cv::imshow("source", src_img);
-      cv::waitKey(0); 
-      //cv::destroyWindow("source");
-      break;
-    }
-    //cv::setMouseCallback("source",NULL,NULL);
+    cv::imshow("source", src_img);
+    cv::waitKey(0);
+    
+    cv::destroyWindow("source");
     vector<cv::Point2f> corners;
     cout << "Give the corner coordinate, finish by 0 0" << endl;
     while(1) {
@@ -141,26 +121,25 @@ int main(int argc, char **argv) {
         return 0;
     }
     cv::Size winSize = cv::Size(5, 5);
-	  cv::Size zerozone = cv::Size(-1, -1);
+	cv::Size zerozone = cv::Size(-1, -1);
     cv::TermCriteria criteria = cv::TermCriteria(cv::TermCriteria::EPS + cv::TermCriteria::MAX_ITER, 40, 0.001);
     
     // cv::namedWindow("output", CV_WINDOW_KEEPRATIO);
-//    cv::namedWindow("output");
-//    cv::cvtColor(src_img, gray_img, cv::COLOR_BGR2GRAY);
-//    cv::cornerSubPix(gray_img, corners, winSize, zerozone, criteria);
-//
-//    cv::Mat result_img = src_img.clone();
+    cv::namedWindow("output");
+    cv::cvtColor(src_img, gray_img, cv::COLOR_BGR2GRAY);
+    cv::cornerSubPix(gray_img, corners, winSize, zerozone, criteria);
+
+    cv::Mat result_img = src_img.clone();
     for(uint t = 0; t < corners.size(); ++t) {
-//        cv::circle(result_img, corners[t], 3, cv::Scalar(random_number_generator.uniform(0, 255), random_number_generator.uniform(0, 255), random_number_generator.uniform(0, 255)), 1, 8, 0);
+        cv::circle(result_img, corners[t], 3, cv::Scalar(random_number_generator.uniform(0, 255), random_number_generator.uniform(0, 255), random_number_generator.uniform(0, 255)), 1, 8, 0);
         printf("(%.3f %.3f)", corners[t].x, corners[t].y);
         writeData(output_name, corners[t].x, corners[t].y, t);
     }
     
     cout << endl << "Result saved, tap a random key to finish the process" << endl;
-    //cv::namedWindow("output");
-    //imshow("output", result_img);
+    cv::namedWindow("output");
+    imshow("output", result_img);
     cv::waitKey(0);
-    cv::destroyWindow("source");
     return 0;
 }
 
