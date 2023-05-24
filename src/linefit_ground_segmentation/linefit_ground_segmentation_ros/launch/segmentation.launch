@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+  <arg name="rviz_enable" default="false"/>
+
+  <!-- Ground segmentation -->
+  <node name="ground_segmentation" pkg="linefit_ground_segmentation_ros" type="ground_segmentation_node" output="screen">
+    <rosparam command="load" file="$(find linefit_ground_segmentation_ros)/launch/segmentation_params.yaml"/>
+    <param name="input_topic" value="/livox/lidar" />
+    <param name="ground_output_topic" value="ground_cloud" />
+    <param name="obstacle_output_topic" value="obstacle_cloud" />
+  </node>
+
+  <!-- Set Rviz -->
+	<group if="$(arg rviz_enable)">
+		<node name="rviz" pkg="rviz" type="rviz" respawn="true"
+				args="-d $(find livox_detection)/data/rviz.rviz"/>
+  </group>
+
+
+</launch>

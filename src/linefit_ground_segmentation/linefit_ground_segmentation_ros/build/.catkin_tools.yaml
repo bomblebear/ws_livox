@@ -1,0 +1,6 @@
+devel_space: /home/bubblebear/jupiter/linefit_ground_segmentation/linefit_ground_segmentation_ros/devel
+install: false
+install_space: /home/bubblebear/jupiter/linefit_ground_segmentation/linefit_ground_segmentation_ros/install
+profile: default
+source_space: /home/bubblebear/jupiter/linefit_ground_segmentation/linefit_ground_segmentation_ros/src
+workspace: /home/bubblebear/jupiter/linefit_ground_segmentation/linefit_ground_segmentation_ros
