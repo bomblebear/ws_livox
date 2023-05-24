@@ -107,7 +107,9 @@ class ros_demo():
         self.starter, self.ender = torch.cuda.Event(enable_timing=True), torch.cuda.Event(enable_timing=True)
 
         self.offset_angle = 0
-        self.offset_ground = 1.8 
+        #self.offset_ground = 1.8 
+        self.offset_ground = 0
+        
         self.point_cloud_range = [0, -44.8, -2, 224, 44.8, 4]
 
     def receive_from_ros(self, msg):
@@ -118,6 +120,8 @@ class ros_demo():
         points_list[:, 2] = copy.deepcopy(np.float32(pc['z']))
         points_list[:, 3] = copy.deepcopy(np.float32(pc['intensity']))
 
+    
+        
         # preprocess 
         points_list[:, 2] += points_list[:, 0] * np.tan(self.offset_angle / 180. * np.pi) + self.offset_ground
         rviz_points = copy.deepcopy(points_list)
@@ -173,7 +177,7 @@ class ros_demo():
         print('det_time(ms): ', curr_latency)
         
         data_infer, pred_dicts = ROS_MODULE.gpu2cpu(data_infer, pred_dicts)
-       
+        
         global last_box_num
         last_box_num, _ = ros_vis.ros_print(data_dict['points_rviz'][:, 0:4], pred_dicts=pred_dicts, last_box_num=last_box_num)
 

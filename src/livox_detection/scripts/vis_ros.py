@@ -212,7 +212,8 @@ class ROS_MODULE:
             score = pred_dicts[0]['pred_scores']
             label = pred_dicts[0]['pred_labels']
             # print('corner points \n', pts)
-
+            
+            
             marker_array.markers.clear()
             marker_array_text.markers.clear()
             for obid in range(boxes.shape[0]):
@@ -262,7 +263,7 @@ class ROS_MODULE:
                 markert.color.a = 1
                 markert.scale.z = 0.6
                
-                markert.pose.orientation.w = 1.0
+                
                 
                 markert.pose.position.x = (boxes[obid][0][0] + boxes[obid][2][0]) / 2
                 markert.pose.position.y = (boxes[obid][0][1] + boxes[obid][2][1]) / 2
@@ -295,6 +296,7 @@ class ROS_MODULE:
 
 
             # publish
+            
             self.marker_pub.publish(marker_array)
             self.marker_text_pub.publish(marker_array_text)
         
