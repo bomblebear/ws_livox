@@ -2,7 +2,7 @@
 
 <launch>
 
-  <arg name="rviz_enable" default="false"/>
+  <arg name="rviz_enable" default="true"/>
 
   <!-- Ground segmentation -->
   <node name="ground_segmentation" pkg="linefit_ground_segmentation_ros" type="ground_segmentation_node" output="screen">
@@ -15,7 +15,7 @@
   <!-- Set Rviz -->
 	<group if="$(arg rviz_enable)">
 		<node name="rviz" pkg="rviz" type="rviz" respawn="true"
-				args="-d $(find livox_detection)/data/rviz.rviz"/>
+				args="-d $(find linefit_ground_segmentation_ros)/launch/rviz.rviz"/>
   </group>
 
 
