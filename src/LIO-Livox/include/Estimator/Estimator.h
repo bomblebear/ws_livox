@@ -129,6 +129,9 @@ public:
 		double ComputeError(const Eigen::Matrix4d& pose){
 			Eigen::Vector3d P_to_Map = pose.topLeftCorner(3,3) * pointOri + pose.topRightCorner(3,1);
 			error = pa * P_to_Map(0) + pb * P_to_Map(1) + pc * P_to_Map(2) + pd;
+
+			//mwx
+			return 0;
 		}
 	};
 

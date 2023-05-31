@@ -11,7 +11,7 @@
     <param name="optimization/max_allow_final_cost" type="double" value="2.0"/>
 
     <node pkg="loam_livox" type="livox_scanRegistration" name="livox_scanRegistration">
-     <remap from="/laser_points_0" to="/livox_full_cloud_mapped" />
+     <remap from="/laser_points_0" to="/livox/lidar" />
      <!--/livox_full_cloud_mapped-->
     </node>
 

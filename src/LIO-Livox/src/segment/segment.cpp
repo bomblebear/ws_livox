@@ -164,6 +164,9 @@ int PCSeg::DoSeg(int *pLabel1, float* fPoints1, int pointNum)
 
 
     free(pLabel2);
+
+    //mwx
+    return 0;
 }
 
 int PCSeg::GetMainVectors(float*fPoints, int* pLabel, int pointNum)
@@ -1056,6 +1059,9 @@ int FreeSeg(float *fPoints,int *pLabel,int pointNum)
     }
     if (pFreeDis != NULL)
         free(pFreeDis);
+
+    //mwx
+    return 0;
 }
 
 
