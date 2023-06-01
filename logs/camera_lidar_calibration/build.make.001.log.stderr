@@ -1,0 +1,41 @@
+[01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/corner_photo.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
+    2 | #include [01;31m[K<image_transport/image_transport.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/projectCloud.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
+    2 | #include [01;31m[K<image_transport/image_transport.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+make[2]: *** [CMakeFiles/cornerPhoto.dir/build.make:63: CMakeFiles/cornerPhoto.dir/src/corner_photo.cpp.o] Error 1
+make[2]: *** [CMakeFiles/projectCloud.dir/build.make:63: CMakeFiles/projectCloud.dir/src/projectCloud.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1283: CMakeFiles/cornerPhoto.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:2012: CMakeFiles/projectCloud.dir/all] Error 2
+[01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/cam_lid_external1.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/cam_lid_external1.cpp:123:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KLocalParameterization[m[K’ is deprecated: LocalParameterizations will be removed from the Ceres Solver API in version 2.2.0. Use Manifolds instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  123 |     ceres::LocalParameterization * [01;35m[Kq_parameterization[m[K = new ceres::EigenQuaternionParameterization();
+      |                                    [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/ceres/autodiff_local_parameterization.h:39[m[K,
+                 from [01m[K/usr/local/include/ceres/ceres.h:39[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/cam_lid_external1.cpp:3[m[K:
+[01m[K/usr/local/include/ceres/local_parameterization.h:121:18:[m[K [01;36m[Knote: [m[Kdeclared here
+  121 |     CERES_EXPORT [01;36m[KLocalParameterization[m[K {
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/cam_lid_external1.cpp:123:68:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigenQuaternionParameterization[m[K’ is deprecated: Use EigenQuaternionManifold instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  123 |     ceres::LocalParameterization * q_parameterization = new ceres::[01;35m[KEigenQuaternionParameterization[m[K();
+      |                                                                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/ceres/autodiff_local_parameterization.h:39[m[K,
+                 from [01m[K/usr/local/include/ceres/ceres.h:39[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/cam_lid_external1.cpp:3[m[K:
+[01m[K/usr/local/include/ceres/local_parameterization.h:233:18:[m[K [01;36m[Knote: [m[Kdeclared here
+  233 |     CERES_EXPORT [01;36m[KEigenQuaternionParameterization[m[K
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/cam_lid_external1.cpp:126:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid ceres::Problem::AddParameterBlock(double*, int, ceres::LocalParameterization*)[m[K’ is deprecated: LocalParameterizations are deprecated. Use the version with Manifolds instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  126 |     problem.AddParameterBlock(ext, 4, q_parameterization[01;35m[K)[m[K;
+      |                                                         [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/ceres/ceres.h:66[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/livox_camera_lidar_calibration/src/cam_lid_external1.cpp:3[m[K:
+[01m[K/usr/local/include/ceres/problem.h:302:8:[m[K [01;36m[Knote: [m[Kdeclared here
+  302 |   void [01;36m[KAddParameterBlock[m[K(double* values,
+      |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+make: *** [Makefile:141: all] Error 2

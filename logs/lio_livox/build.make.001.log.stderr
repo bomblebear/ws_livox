@@ -1,0 +1,59 @@
+In file included from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/Estimator.cpp:1[m[K:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:[m[K In member function ‘[01m[Kdouble Estimator::FeatureLine::ComputeError(const Matrix4d&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:74:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   74 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:[m[K In member function ‘[01m[Kdouble Estimator::FeaturePlan::ComputeError(const Matrix4d&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:94:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   94 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/PoseEstimation.cpp:1[m[K:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:[m[K In member function ‘[01m[Kdouble Estimator::FeatureLine::ComputeError(const Matrix4d&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:74:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   74 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:[m[K In member function ‘[01m[Kdouble Estimator::FeaturePlan::ComputeError(const Matrix4d&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:94:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   94 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:[m[K In member function ‘[01m[Kdouble Estimator::FeaturePlanVec::ComputeError(const Matrix4d&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:112:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  112 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:[m[K In member function ‘[01m[Kdouble Estimator::FeaturePlanVec::ComputeError(const Matrix4d&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:112:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  112 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/PoseEstimation.cpp:[m[K In function ‘[01m[Kbool TryMAPInitialization()[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/PoseEstimation.cpp:190:33:[m[K [01;35m[Kwarning: [m[K‘[01m[KLocalParameterization[m[K’ is deprecated: LocalParameterizations will be removed from the Ceres Solver API in version 2.2.0. Use Manifolds instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  190 |   ceres::LocalParameterization *[01;35m[KquatParam[m[K = new ceres::QuaternionParameterization();
+      |                                 [01;35m[K^~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/ceres/autodiff_local_parameterization.h:39[m[K,
+                 from [01m[K/usr/local/include/ceres/ceres.h:39[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/utils/ceresfunc.h:3[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:20[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/PoseEstimation.cpp:1[m[K:
+[01m[K/usr/local/include/ceres/local_parameterization.h:121:18:[m[K [01;36m[Knote: [m[Kdeclared here
+  121 |     CERES_EXPORT [01;36m[KLocalParameterization[m[K {
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/PoseEstimation.cpp:190:56:[m[K [01;35m[Kwarning: [m[K‘[01m[KQuaternionParameterization[m[K’ is deprecated: Use QuaternionManifold instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  190 |   ceres::LocalParameterization *quatParam = new ceres::[01;35m[KQuaternionParameterization[m[K();
+      |                                                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/ceres/autodiff_local_parameterization.h:39[m[K,
+                 from [01m[K/usr/local/include/ceres/ceres.h:39[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/utils/ceresfunc.h:3[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:20[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/PoseEstimation.cpp:1[m[K:
+[01m[K/usr/local/include/ceres/local_parameterization.h:211:18:[m[K [01;36m[Knote: [m[Kdeclared here
+  211 |     CERES_EXPORT [01;36m[KQuaternionParameterization[m[K : public LocalParameterization {
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/PoseEstimation.cpp:193:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid ceres::Problem::AddParameterBlock(double*, int, ceres::LocalParameterization*)[m[K’ is deprecated: LocalParameterizations are deprecated. Use the version with Manifolds instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  193 |   problem_quat.AddParameterBlock(para_quat, 4, quatParam[01;35m[K)[m[K;
+      |                                                         [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/ceres/ceres.h:66[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/utils/ceresfunc.h:3[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/include/Estimator/Estimator.h:20[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/LIO-Livox/src/lio/PoseEstimation.cpp:1[m[K:
+[01m[K/usr/local/include/ceres/problem.h:302:8:[m[K [01;36m[Knote: [m[Kdeclared here
+  302 |   void [01;36m[KAddParameterBlock[m[K(double* values,
+      |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K

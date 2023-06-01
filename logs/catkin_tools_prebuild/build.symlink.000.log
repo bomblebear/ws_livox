@@ -1,0 +1,12 @@
+Symlinking /home/bubblebear/ws_livox/devel/./local_setup.sh
+Symlinking /home/bubblebear/ws_livox/devel/./_setup_util.py
+Symlinking /home/bubblebear/ws_livox/devel/./local_setup.bash
+Symlinking /home/bubblebear/ws_livox/devel/./setup.sh
+Symlinking /home/bubblebear/ws_livox/devel/./setup.bash
+Symlinking /home/bubblebear/ws_livox/devel/./setup.zsh
+Symlinking /home/bubblebear/ws_livox/devel/./local_setup.zsh
+Symlinking /home/bubblebear/ws_livox/devel/./env.sh
+Symlinking /home/bubblebear/ws_livox/devel/./cmake.lock
+Symlinking /home/bubblebear/ws_livox/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Symlinking /home/bubblebear/ws_livox/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/bubblebear/ws_livox/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake

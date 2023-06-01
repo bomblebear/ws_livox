@@ -1,0 +1,35 @@
+[  2%] Built target gtest
+[  5%] Built target identifiable
+[  7%] Built target folder_reader
+[ 11%] Built target difference
+[ 14%] Built target test_help_funcs
+[ 17%] Built target cloud_saver
+[ 19%] Built target qt_utils
+[ 26%] Built target projections
+[ 32%] Built target drawable
+[ 35%] Built target gtest_main
+[ 38%] Built target image_labeler
+[ 40%] Built target visualization
+[ 43%] Built target ros_bridge
+[ 46%] Built target viewer
+[ 50%] Built target cloud
+[ 52%] Built target bbox
+[ 55%] Built target velodyne_utils
+[ 57%] Built target ground_remove
+[ 60%] Built target show_objects_moosmann
+[ 61%] [32m[1mLinking CXX executable /home/bubblebear/ws_livox/devel/.private/depth_clustering/lib/depth_clustering/show_objects_node[0m
+[ 72%] Built target qt_widgets
+[ 75%] Built target show_objects_kitti
+[ 76%] [32m[1mLinking CXX executable /home/bubblebear/ws_livox/devel/.private/depth_clustering/lib/depth_clustering/save_clusters_node[0m
+[ 94%] Built target depth_clustering_test
+[ 97%] Built target qt_gui_app
+/usr/bin/ld: /home/bubblebear/ws_livox/devel/.private/depth_clustering/lib/libros_bridge.so: undefined reference to `tf::poseMsgToEigen(geometry_msgs::Pose_<std::allocator<void> > const&, Eigen::Transform<double, 3, 2, 0>&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [examples/ros_nodes/CMakeFiles/show_objects_node.dir/build.make:255: /home/bubblebear/ws_livox/devel/.private/depth_clustering/lib/depth_clustering/show_objects_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3461: examples/ros_nodes/CMakeFiles/show_objects_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/usr/bin/ld: /home/bubblebear/ws_livox/devel/.private/depth_clustering/lib/libros_bridge.so: undefined reference to `tf::poseMsgToEigen(geometry_msgs::Pose_<std::allocator<void> > const&, Eigen::Transform<double, 3, 2, 0>&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [examples/ros_nodes/CMakeFiles/save_clusters_node.dir/build.make:247: /home/bubblebear/ws_livox/devel/.private/depth_clustering/lib/depth_clustering/save_clusters_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3426: examples/ros_nodes/CMakeFiles/save_clusters_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

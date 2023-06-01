@@ -1,0 +1,71 @@
+** WARNING ** io features related to openni will be disabled
+** WARNING ** io features related to openni2 will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+** WARNING ** visualization features related to openni will be disabled
+** WARNING ** visualization features related to openni2 will be disabled
+** WARNING ** apps features related to openni will be disabled
+CMake Warning (dev) in CMakeLists.txt:
+  AUTOGEN: No valid Qt version found for target colorLidar.  AUTOMOC, AUTOUIC
+  and AUTORCC disabled.  Consider adding:
+
+    find_package(Qt<QTVERSION> COMPONENTS Widgets)
+
+  to your CMakeLists.txt file.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  AUTOGEN: No valid Qt version found for target getExt2.  AUTOMOC, AUTOUIC
+  and AUTORCC disabled.  Consider adding:
+
+    find_package(Qt<QTVERSION> COMPONENTS Widgets)
+
+  to your CMakeLists.txt file.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  AUTOGEN: No valid Qt version found for target pcdTransfer.  AUTOMOC,
+  AUTOUIC and AUTORCC disabled.  Consider adding:
+
+    find_package(Qt<QTVERSION> COMPONENTS Widgets)
+
+  to your CMakeLists.txt file.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  AUTOGEN: No valid Qt version found for target cornerPhoto.  AUTOMOC,
+  AUTOUIC and AUTORCC disabled.  Consider adding:
+
+    find_package(Qt<QTVERSION> COMPONENTS Widgets)
+
+  to your CMakeLists.txt file.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  AUTOGEN: No valid Qt version found for target projectCloud.  AUTOMOC,
+  AUTOUIC and AUTORCC disabled.  Consider adding:
+
+    find_package(Qt<QTVERSION> COMPONENTS Widgets)
+
+  to your CMakeLists.txt file.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  AUTOGEN: No valid Qt version found for target cameraCalib.  AUTOMOC,
+  AUTOUIC and AUTORCC disabled.  Consider adding:
+
+    find_package(Qt<QTVERSION> COMPONENTS Widgets)
+
+  to your CMakeLists.txt file.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  AUTOGEN: No valid Qt version found for target getExt1.  AUTOMOC, AUTOUIC
+  and AUTORCC disabled.  Consider adding:
+
+    find_package(Qt<QTVERSION> COMPONENTS Widgets)
+
+  to your CMakeLists.txt file.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+

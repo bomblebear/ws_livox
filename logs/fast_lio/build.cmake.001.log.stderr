@@ -1,0 +1,34 @@
+CMake Warning (dev) at CMakeLists.txt:2 (project):
+  Policy CMP0048 is not set: project() command manages VERSION variables.
+  Run "cmake --help-policy CMP0048" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The following variable(s) would be set to empty:
+
+    CMAKE_PROJECT_VERSION
+    CMAKE_PROJECT_VERSION_MAJOR
+    CMAKE_PROJECT_VERSION_MINOR
+    CMAKE_PROJECT_VERSION_PATCH
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+Current CPU archtecture: x86_64
+Processer number:  16
+core for MP: 3
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+Eigen:/usr/local/include/eigen3
+[31m[1mCMake Error[0m at /home/bubblebear/ws_livox/src/FAST_LIO/CMakeLists.txt:87 (add_executable):
+  Cannot find source file:
+
+    include/ikd-Tree/ikd_Tree.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+[31m[1mCMake Error[0m at /home/bubblebear/ws_livox/src/FAST_LIO/CMakeLists.txt:87 (add_executable):
+  No SOURCES given to target: fastlio_mapping
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

@@ -516,6 +516,7 @@ void publish_frame_world(const ros::Publisher & pubLaserCloudFull)
             pcd_index ++;
             string all_points_dir(string(string(ROOT_DIR) + "PCD/scans_") + to_string(pcd_index) + string(".pcd"));
             pcl::PCDWriter pcd_writer;
+            //cout << string(ROOT_DIR) <<endl;
             cout << "current scan saved to /PCD/" << all_points_dir << endl;
             pcd_writer.writeBinary(all_points_dir, *pcl_wait_save);
             pcl_wait_save->clear();
@@ -1019,6 +1020,7 @@ int main(int argc, char** argv)
         string file_name = string("scans.pcd");
         string all_points_dir(string(string(ROOT_DIR) + "PCD/") + file_name);
         pcl::PCDWriter pcd_writer;
+        cout << "Root directory is: " << string(ROOT_DIR) << endl;
         cout << "current scan saved to /PCD/" << file_name<<endl;
         pcd_writer.writeBinary(all_points_dir, *pcl_wait_save);
     }

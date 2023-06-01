@@ -1,0 +1,13 @@
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  8%] Built target lio_livox_generate_messages_eus
+[  8%] Built target lio_livox_generate_messages_cpp
+[  8%] Built target lio_livox_generate_messages_nodejs
+[ 58%] Built target PoseEstimation
+[ 58%] Built target lio_livox_generate_messages_lisp
+[ 58%] Built target lio_livox_generate_messages_py
+[100%] Built target ScanRegistration
+[100%] Built target lio_livox_generate_messages

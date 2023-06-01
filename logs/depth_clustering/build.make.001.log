@@ -1,0 +1,96 @@
+[  2%] Built target identifiable
+[  5%] Built target gtest
+[  7%] Built target folder_reader
+[ 11%] Built target difference
+[35m[1mScanning dependencies of target gtest_main[0m
+[ 17%] Built target cloud_saver
+[ 17%] Built target test_help_funcs
+[ 19%] Built target qt_utils
+[ 26%] Built target drawable
+[ 32%] Built target projections
+[ 34%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[35m[1mScanning dependencies of target viewer[0m
+[35m[1mScanning dependencies of target cloud[0m
+[ 39%] Built target image_labeler
+[ 39%] Built target visualization
+[ 40%] [32mBuilding CXX object src/ros_bridge/CMakeFiles/ros_bridge.dir/cloud_odom_ros_subscriber.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/qt/viewer/CMakeFiles/viewer.dir/viewer.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/utils/CMakeFiles/cloud.dir/cloud.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/utils/CMakeFiles/cloud.dir/rich_point.cpp.o[0m
+[ 46%] [32m[1mLinking CXX static library ../lib/libgtest_main.a[0m
+[ 46%] Built target gtest_main
+[ 47%] [32m[1mLinking CXX shared library /home/bubblebear/ws_livox/devel/.private/depth_clustering/lib/libviewer.so[0m
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/ros_bridge/cloud_odom_ros_subscriber.cpp:22:10:[m[K [01;31m[Kfatal error: [m[Keigen_conversions/eigen_msg.h: No such file or directory
+   22 | #include [01;31m[K<eigen_conversions/eigen_msg.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/ros_bridge/CMakeFiles/ros_bridge.dir/build.make:63: src/ros_bridge/CMakeFiles/ros_bridge.dir/cloud_odom_ros_subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3319: src/ros_bridge/CMakeFiles/ros_bridge.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 47%] Built target viewer
+In file included from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.h:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.cpp:21[m[K:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:[m[K In member function ‘[01m[Kdepth_clustering::Pose depth_clustering::Pose::InLocalFrameOf(const depth_clustering::Pose&) const[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:102:20:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kdepth_clustering::Pose::Pose(const depth_clustering::Pose&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+  102 |     Pose pose(*this[01;35m[K)[m[K;
+      |                    [01;35m[K^[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:119:9:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[Kdepth_clustering::Pose[m[K’ has user-provided ‘[01m[Kdepth_clustering::Pose& depth_clustering::Pose::operator=(const depth_clustering::Pose&)[m[K’
+  119 |   Pose& [01;36m[Koperator[m[K=(const Pose& other) {
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:104:12:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kdepth_clustering::Pose::Pose(const depth_clustering::Pose&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+  104 |     return [01;35m[Kpose[m[K;
+      |            [01;35m[K^~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:119:9:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[Kdepth_clustering::Pose[m[K’ has user-provided ‘[01m[Kdepth_clustering::Pose& depth_clustering::Pose::operator=(const depth_clustering::Pose&)[m[K’
+  119 |   Pose& [01;36m[Koperator[m[K=(const Pose& other) {
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:[m[K In member function ‘[01m[Kdepth_clustering::Pose::Ptr depth_clustering::Pose::InLocalFrameOf(const Ptr&) const[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:108:34:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kdepth_clustering::Pose::Pose(const depth_clustering::Pose&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+  108 |     Pose::Ptr pose(new Pose(*this[01;35m[K)[m[K);
+      |                                  [01;35m[K^[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:119:9:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[Kdepth_clustering::Pose[m[K’ has user-provided ‘[01m[Kdepth_clustering::Pose& depth_clustering::Pose::operator=(const depth_clustering::Pose&)[m[K’
+  119 |   Pose& [01;36m[Koperator[m[K=(const Pose& other) {
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:[m[K In member function ‘[01m[Kdepth_clustering::Pose depth_clustering::Pose::operator-()[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:143:12:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kdepth_clustering::Pose::Pose(const depth_clustering::Pose&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+  143 |     return [01;35m[Kinverted[m[K;
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:119:9:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[Kdepth_clustering::Pose[m[K’ has user-provided ‘[01m[Kdepth_clustering::Pose& depth_clustering::Pose::operator=(const depth_clustering::Pose&)[m[K’
+  119 |   Pose& [01;36m[Koperator[m[K=(const Pose& other) {
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:[m[K In static member function ‘[01m[Kstatic depth_clustering::Pose depth_clustering::Pose::FromVector6f(const Vector6f&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:165:12:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kdepth_clustering::Pose::Pose(const depth_clustering::Pose&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+  165 |     return [01;35m[KT[m[K;
+      |            [01;35m[K^[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:119:9:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[Kdepth_clustering::Pose[m[K’ has user-provided ‘[01m[Kdepth_clustering::Pose& depth_clustering::Pose::operator=(const depth_clustering::Pose&)[m[K’
+  119 |   Pose& [01;36m[Koperator[m[K=(const Pose& other) {
+      |         [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.cpp:21[m[K:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.h:[m[K In constructor ‘[01m[Kdepth_clustering::Cloud::Cloud(const depth_clustering::Pose&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.h:59:64:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kdepth_clustering::Pose::Pose(const depth_clustering::Pose&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+   59 |   explicit Cloud(const Pose& pose) : _pose(pose), _sensor_pose([01;35m[K)[m[K {}
+      |                                                                [01;35m[K^[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.h:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.cpp:21[m[K:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:119:9:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[Kdepth_clustering::Pose[m[K’ has user-provided ‘[01m[Kdepth_clustering::Pose& depth_clustering::Pose::operator=(const depth_clustering::Pose&)[m[K’
+  119 |   Pose& [01;36m[Koperator[m[K=(const Pose& other) {
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.cpp:[m[K In copy constructor ‘[01m[Kdepth_clustering::Cloud::Cloud(const depth_clustering::Cloud&)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.cpp:28:39:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kdepth_clustering::Pose::Pose(const depth_clustering::Pose&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+   28 |       _sensor_pose(cloud.sensor_pose()[01;35m[K)[m[K {
+      |                                       [01;35m[K^[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.h:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.cpp:21[m[K:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:119:9:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[Kdepth_clustering::Pose[m[K’ has user-provided ‘[01m[Kdepth_clustering::Pose& depth_clustering::Pose::operator=(const depth_clustering::Pose&)[m[K’
+  119 |   Pose& [01;36m[Koperator[m[K=(const Pose& other) {
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.cpp:28:39:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kdepth_clustering::Pose::Pose(const depth_clustering::Pose&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+   28 |       _sensor_pose(cloud.sensor_pose()[01;35m[K)[m[K {
+      |                                       [01;35m[K^[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.h:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/cloud.cpp:21[m[K:
+[01m[K/home/bubblebear/ws_livox/src/depth_clustering/src/utils/pose.h:119:9:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[Kdepth_clustering::Pose[m[K’ has user-provided ‘[01m[Kdepth_clustering::Pose& depth_clustering::Pose::operator=(const depth_clustering::Pose&)[m[K’
+  119 |   Pose& [01;36m[Koperator[m[K=(const Pose& other) {
+      |         [01;36m[K^~~~~~~~[m[K
+[ 48%] [32m[1mLinking CXX shared library /home/bubblebear/ws_livox/devel/.private/depth_clustering/lib/libcloud.so[0m
+[ 48%] Built target cloud
+make: *** [Makefile:141: all] Error 2

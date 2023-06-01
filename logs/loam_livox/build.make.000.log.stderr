@@ -1,0 +1,132 @@
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_feature_extractor.hpp:57[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_feature_extractor.cpp:37[m[K:
+/home/bubblebear/ws_livox/src/loam_livox/source/livox_feature_extractor.hpp: In instantiation of ‘[01m[Kint Livox_laser::projection_scan_3d_2d(pcl::PointCloud<PointT>&, std::vector<float>&) [with T = pcl::PointXYZI][m[K’:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/livox_feature_extractor.hpp:755:13:[m[K   required from ‘[01m[Kstd::vector<pcl::PointCloud<pcl::PointXYZI> > Livox_laser::extract_laser_features(pcl::PointCloud<PointT>&, double) [with T = pcl::PointXYZI][m[K’
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_feature_extractor.hpp:286:113:[m[K   required from here
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/livox_feature_extractor.hpp:577:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  577 |             if ( [01;35m[Kval_index < split_idx.size() - 2[m[K )
+      |                  [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:67[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/ceres_pose_graph_3d.hpp:[m[K In function ‘[01m[Kvoid Ceres_pose_graph_3d::BuildOptimizationProblem(const VectorOfConstraints&, Ceres_pose_graph_3d::MapOfPoses*, ceres::Problem*)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/ceres_pose_graph_3d.hpp:293:35:[m[K [01;35m[Kwarning: [m[K‘[01m[KLocalParameterization[m[K’ is deprecated: LocalParameterizations will be removed from the Ceres Solver API in version 2.2.0. Use Manifolds instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  293 |     ceres::LocalParameterization *[01;35m[Kquaternion_local_parameterization[m[K =
+      |                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/ceres/autodiff_local_parameterization.h:39[m[K,
+                 from [01m[K/usr/local/include/ceres/ceres.h:39[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/usr/local/include/ceres/local_parameterization.h:121:18:[m[K [01;36m[Knote: [m[Kdeclared here
+  121 |     CERES_EXPORT [01;36m[KLocalParameterization[m[K {
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:67[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/ceres_pose_graph_3d.hpp:294:20:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigenQuaternionParameterization[m[K’ is deprecated: Use EigenQuaternionManifold instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  294 |         new ceres::[01;35m[KEigenQuaternionParameterization[m[K;
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/ceres/autodiff_local_parameterization.h:39[m[K,
+                 from [01m[K/usr/local/include/ceres/ceres.h:39[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/usr/local/include/ceres/local_parameterization.h:233:18:[m[K [01;36m[Knote: [m[Kdeclared here
+  233 |     CERES_EXPORT [01;36m[KEigenQuaternionParameterization[m[K
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:67[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/ceres_pose_graph_3d.hpp:318:73:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid ceres::Problem::SetParameterization(double*, ceres::LocalParameterization*)[m[K’ is deprecated: LocalParameterizations are deprecated. Use SetManifold instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  318 |                                       quaternion_local_parameterization [01;35m[K)[m[K;
+      |                                                                         [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/ceres/ceres.h:66[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/usr/local/include/ceres/problem.h:395:8:[m[K [01;36m[Knote: [m[Kdeclared here
+  395 |   void [01;36m[KSetParameterization[m[K(double* values,
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:67[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/ceres_pose_graph_3d.hpp:320:73:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid ceres::Problem::SetParameterization(double*, ceres::LocalParameterization*)[m[K’ is deprecated: LocalParameterizations are deprecated. Use SetManifold instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  320 |                                       quaternion_local_parameterization [01;35m[K)[m[K;
+      |                                                                         [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/ceres/ceres.h:66[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/usr/local/include/ceres/problem.h:395:8:[m[K [01;36m[Knote: [m[Kdeclared here
+  395 |   void [01;36m[KSetParameterization[m[K(double* values,
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:68[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/point_cloud_registration.hpp:[m[K In member function ‘[01m[Kint Point_cloud_registration::find_out_incremental_transfrom(pcl::PointCloud<pcl::PointXYZI>::Ptr, pcl::PointCloud<pcl::PointXYZI>::Ptr, pcl::KdTreeFLANN<pcl::PointXYZI>&, pcl::KdTreeFLANN<pcl::PointXYZI>&, pcl::PointCloud<pcl::PointXYZI>::Ptr, pcl::PointCloud<pcl::PointXYZI>::Ptr)[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/point_cloud_registration.hpp:221:49:[m[K [01;35m[Kwarning: [m[K‘[01m[KLocalParameterization[m[K’ is deprecated: LocalParameterizations will be removed from the Ceres Solver API in version 2.2.0. Use Manifolds instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  221 |             ceres::LocalParameterization *      [01;35m[Kq_parameterization[m[K = new ceres::EigenQuaternionParameterization();
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/ceres/autodiff_local_parameterization.h:39[m[K,
+                 from [01m[K/usr/local/include/ceres/ceres.h:39[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/usr/local/include/ceres/local_parameterization.h:121:18:[m[K [01;36m[Knote: [m[Kdeclared here
+  121 |     CERES_EXPORT [01;36m[KLocalParameterization[m[K {
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:68[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/point_cloud_registration.hpp:221:81:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigenQuaternionParameterization[m[K’ is deprecated: Use EigenQuaternionManifold instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  221 |             ceres::LocalParameterization *      q_parameterization = new ceres::[01;35m[KEigenQuaternionParameterization[m[K();
+      |                                                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/ceres/autodiff_local_parameterization.h:39[m[K,
+                 from [01m[K/usr/local/include/ceres/ceres.h:39[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/usr/local/include/ceres/local_parameterization.h:233:18:[m[K [01;36m[Knote: [m[Kdeclared here
+  233 |     CERES_EXPORT [01;36m[KEigenQuaternionParameterization[m[K
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:68[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/point_cloud_registration.hpp:227:89:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid ceres::Problem::AddParameterBlock(double*, int, ceres::LocalParameterization*)[m[K’ is deprecated: LocalParameterizations are deprecated. Use the version with Manifolds instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  227 |             problem.AddParameterBlock( m_para_buffer_incremental, 4, q_parameterization [01;35m[K)[m[K;
+      |                                                                                         [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/ceres/ceres.h:66[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:40[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/usr/local/include/ceres/problem.h:302:8:[m[K [01;36m[Knote: [m[Kdeclared here
+  302 |   void [01;36m[KAddParameterBlock[m[K(double* values,
+      |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:[m[K In member function ‘[01m[Kvoid Laser_mapping::service_loop_detection()[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:1030:180:[m[K [01;35m[Kwarning: [m[K‘[01m[K*[m[K’ in boolean context, suggest ‘[01m[K&&[m[K’ instead [[01;35m[K-Wint-in-bool-context[m[K]
+ 1030 |                     if( [01;35m[K(last_keyframe->m_set_cell.size() - keyframe_vec[ his ]->m_set_cell.size() ) /  (last_keyframe->m_set_cell.size() + keyframe_vec[ his ]->m_set_cell.size())*0.1[m[K )
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:969:51:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kratio_non_zero_plane[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  969 |             float                                 [01;35m[Kratio_non_zero_plane[m[K = last_keyframe->m_ratio_nonzero_plane;
+      |                                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:970:51:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kratio_non_zero_line[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  970 |             float                                 [01;35m[Kratio_non_zero_line[m[K = last_keyframe->m_ratio_nonzero_line;
+      |                                                   [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:981:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksim_plane_res_cv[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  981 |             float [01;35m[Ksim_plane_res_cv[m[K = 0, sim_plane_res = 0;
+      |                   [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:982:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksim_line_res_cv[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  982 |             float [01;35m[Ksim_line_res_cv[m[K = 0, sim_line_res = 0;
+      |                   [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:876:13:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klast_update_index[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  876 |         int [01;35m[Klast_update_index[m[K = 0;
+      |             [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:[m[K In member function ‘[01m[Kint Laser_mapping::process_new_scan()[m[K’:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:1554:59:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::__cxx11::list<std::shared_ptr<Maps_keyframe<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+ 1554 |                 if([01;35m[Km_keyframe_need_precession_list.size() > m_loop_closure_maximum_keyframe_in_wating_list[m[K)
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:69[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+/home/bubblebear/ws_livox/src/loam_livox/source/scene_alignment.hpp: In instantiation of ‘[01m[Kint Scene_alignment<PT_DATA_TYPE>::find_tranfrom_of_two_mappings(Maps_keyframe<PT_DATA_TYPE>*, Maps_keyframe<PT_DATA_TYPE>*, int, std::string) [with PT_DATA_TYPE = float; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/scene_alignment.hpp:266:110:[m[K   required from ‘[01m[Kint Scene_alignment<PT_DATA_TYPE>::find_tranfrom_of_two_mappings(std::shared_ptr<Maps_keyframe<PT_DATA_TYPE> >, std::shared_ptr<Maps_keyframe<PT_DATA_TYPE> >, int, std::string) [with PT_DATA_TYPE = float; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:1036:174:[m[K   required from here
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/scene_alignment.hpp:304:39:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktransform_R[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  304 |         Eigen::Quaterniond            [01;35m[Ktransform_R[m[K = Eigen::Quaterniond::Identity();
+      |                                       [01;35m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:65[m[K,
+                 from [01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.cpp:37[m[K:
+/home/bubblebear/ws_livox/src/loam_livox/source/cell_map_keyframe.hpp: In instantiation of ‘[01m[Kstd::string Points_cloud_cell<DATA_TYPE>::to_json_string() [with DATA_TYPE = float; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/cell_map_keyframe.hpp:1511:19:[m[K   required from ‘[01m[Kstd::string Maps_keyframe<DATA_TYPE>::to_json_string(int&) [with DATA_TYPE = float; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/cell_map_keyframe.hpp:1543:20:[m[K   required from ‘[01m[Kvoid Maps_keyframe<DATA_TYPE>::save_to_file(const string&, const string&) [with DATA_TYPE = float; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/laser_mapping.hpp:975:98:[m[K   required from here
+[01m[K/home/bubblebear/ws_livox/src/loam_livox/source/cell_map_keyframe.hpp:150:33:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  150 |         for ( unsigned i = 0; [01;35m[Ki < point_number[m[K; i++ )
+      |                               [01;35m[K~~^~~~~~~~~~~~~~[m[K
