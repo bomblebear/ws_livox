@@ -3,11 +3,12 @@ project(lio_livox)
 
 SET(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++11")
-
 set(CMAKE_CXX_STANDARD 14)
+
 
 #SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+
 
 find_package(catkin REQUIRED COMPONENTS
   	     message_generation
