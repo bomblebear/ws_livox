@@ -73,6 +73,7 @@
         "variant": "cpp",
         "strstream": "cpp",
         "bit": "cpp",
-        "csignal": "cpp"
+        "csignal": "cpp",
+        "shared_mutex": "cpp"
     }
 }

@@ -245,20 +245,29 @@ void GroundSegmentation::insertionThread(const PointCloud& cloud,
       / params_.n_bins;
   const double r_min = sqrt(params_.r_min_square);
   for (unsigned int i = start_index; i < end_index; ++i) {
+    
     pcl::PointXYZ point(cloud[i]);
     const double range_square = point.x * point.x + point.y * point.y;
     const double range = sqrt(range_square);
+
     if (range_square < params_.r_max_square && range_square > params_.r_min_square) {
+
       const double angle = std::atan2(point.y, point.x);
       const unsigned int bin_index = (range - r_min) / bin_step;
       const unsigned int segment_index = (angle + M_PI) / segment_step;
       const unsigned int segment_index_clamped = segment_index == params_.n_segments ? 0 : segment_index;
       segments_[segment_index_clamped][bin_index].addPoint(range, point.z);
       bin_index_[i] = std::make_pair(segment_index_clamped, bin_index);
+
     }
+
     else {
+
       bin_index_[i] = std::make_pair<int, int>(-1, -1);
+
     }
+
     segment_coordinates_[i] = Bin::MinZPoint(range, point.z);
+
   }
 }
