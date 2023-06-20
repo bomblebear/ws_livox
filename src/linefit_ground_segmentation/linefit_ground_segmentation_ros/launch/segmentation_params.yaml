@@ -5,7 +5,7 @@ r_max: 100                   # maximum point distance.
 n_bins: 350                 # number of radial bins.
 n_segments: 500             # number of radial segments.   const double segment_step = 2*M_PI / params_.n_segments;
 
-max_dist_to_line: 0.05      # maximum vertical distance of point to line to be considered ground.
+max_dist_to_line: 0.04      # maximum vertical distance of point to line to be considered ground.
 
 sensor_height: 0.22          # sensor height above ground.
 min_slope: 0.0              # minimum slope of a ground line.
